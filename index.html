@@ -1,17 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise Birthday</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tiyop Archive</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Happy Birthday!</h1>
-        <p>Surprise! Wishing you a wonderful day filled with love and happiness.</p>
-        <button id="surpriseBtn">Click for Surprise</button>
+
+  <!-- BACKGROUND -->
+  <div class="blur blur1"></div>
+  <div class="blur blur2"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <span class="tag">
+      Developer Archive
+    </span>
+
+    <h1>
+      my project Archive 📚
+    </h1>
+
+    <p>
+      Collection of apps, websites,
+      experiments, and development journey.
+    </p>
+
+  </section>
+
+  <!-- CATEGORY -->
+
+  <section class="categories">
+
+    <button class="active" data-filter="all">
+      All
+    </button>
+
+    <button data-filter="mobile">
+      Mobile Apps
+    </button>
+
+    <button data-filter="web">
+      Websites
+    </button>
+
+    <button data-filter="ui">
+      UI Design
+    </button>
+
+    <button data-filter="college">
+      College Projects
+    </button>
+
+  </section>
+
+  <!-- PROJECT GRID -->
+
+  <section class="projects">
+
+    <!-- CARD -->
+
+    <div class="card mobile">
+
+      <img src="apk mobile.jpeg" alt="">
+
+      <div class="card-content">
+
+        <span class="category">
+          Mobile App
+        </span>
+
+        <h2>Dompetku    </h2>
+
+        <p>
+          Simple finance tracking app
+          for daily activities.
+        </p>
+
+        <div class="stack">
+          <span>Flutter</span>
+          <span>Firebase</span>
+        </div>
+
+        <div class="buttons">
+
+          <a href="#">
+            Preview
+          </a>
+
+          <a href="#">
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
     </div>
-    <script src="script.js"></script>
+
+    <!-- CARD -->
+
+    <div class="card web">
+
+      <img src="apkramadhan.jpeg" alt="">
+
+      <div class="card-content">
+
+        <span class="category">
+          Mobile App    
+        </span>
+
+        <h2>Ramadhan tracker</h2>
+
+        <p>
+          Warm nostalgic family website
+          with emotional storytelling.
+        </p>
+
+        <div class="stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="buttons">
+
+          <a href="#">
+            Preview
+          </a>
+
+          <a href="#">
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+
+    <div class="card ui">
+
+      <img src="img/ui-design.png" alt="">
+
+      <div class="card-content">
+
+        <span class="category">
+          UI Design
+        </span>
+
+        <h2>Finance UI Kit</h2>
+
+        <p>
+          Modern dark finance interface
+          exploration for mobile app.
+        </p>
+
+        <div class="stack">
+          <span>Figma</span>
+        </div>
+
+        <div class="buttons">
+
+          <a href="#">
+            Preview
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+
+    <div class="card college">
+
+      <img src="img/college-project.png" alt="">
+
+      <div class="card-content">
+
+        <span class="category">
+          College Project
+        </span>
+
+        <h2>AI Search Mindmap</h2>
+
+        <p>
+          Mindmap visualization about
+          informed searching algorithm.
+        </p>
+
+        <div class="stack">
+          <span>Design</span>
+          <span>Research</span>
+        </div>
+
+        <div class="buttons">
+
+          <a href="#">
+            Preview
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JOURNEY -->
+
+  <section class="journey">
+
+    <div class="journey-card">
+
+      <h2>Development Journey 🌙</h2>
+
+      <p>
+        Every project here represents
+        a learning process.
+      </p>
+
+      <p>
+        Started from curiosity,
+        continued with consistency.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      Built slowly with curiosity ☕
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
