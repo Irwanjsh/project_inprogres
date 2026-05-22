@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Tiyop Archive</title>
 
   <!-- FONT -->
@@ -11,8 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- ICON -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,239 +22,174 @@
 
   <!-- HERO -->
   <section class="hero">
-
     <span class="tag">
+      <span class="tag-dot"></span>
       Developer Archive
     </span>
-
-    <h1>
-      my project Archive 📚
-    </h1>
-
-    <p>
-      Collection of apps, websites,
-      experiments, and development journey.
-    </p>
-
+    <h1>my project Archive 📚</h1>
+    <p>Collection of apps, websites, experiments, and development journey.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" id="total-count">4</span>
+        <span class="stat-lbl">Projects</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-lbl">Mobile Apps</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-lbl">UI Design</span>
+      </div>
+    </div>
   </section>
 
   <!-- CATEGORY -->
-
   <section class="categories">
-
     <button class="active" data-filter="all">
-      All
+      <i class="fas fa-border-all"></i> All
     </button>
-
     <button data-filter="mobile">
-      Mobile Apps
+      <i class="fas fa-mobile-alt"></i> Mobile Apps
     </button>
-
     <button data-filter="web">
-      Websites
+      <i class="fas fa-globe"></i> Websites
     </button>
-
     <button data-filter="ui">
-      UI Design
+      <i class="fas fa-pen-ruler"></i> UI Design
     </button>
-
     <button data-filter="college">
-      College Projects
+      <i class="fas fa-graduation-cap"></i> College Projects
     </button>
-
   </section>
 
+  <!-- COUNTER -->
+  <div class="result-count">
+    <span id="visible-count">4</span> projects found
+  </div>
+
   <!-- PROJECT GRID -->
+  <section class="projects" id="project-grid">
 
-  <section class="projects">
-
-    <!-- CARD -->
-
+    <!-- CARD 1 -->
     <div class="card mobile">
-
-      <img src="apk mobile.jpeg" alt="">
-
+      <div class="card-img-wrap">
+        <img src="apk mobile.jpeg" alt="Preview aplikasi Dompetku - finance tracker">
+        <span class="card-badge mobile-badge">Mobile App</span>
+      </div>
       <div class="card-content">
-
-        <span class="category">
-          Mobile App
-        </span>
-
-        <h2>Dompetku    </h2>
-
-        <p>
-          Simple finance tracking app
-          for daily activities.
-        </p>
-
+        <h2>Dompetku</h2>
+        <p>Simple finance tracking app for daily activities.</p>
         <div class="stack">
           <span>Flutter</span>
           <span>Firebase</span>
         </div>
-
         <div class="buttons">
-
-          <a href="https://irwanjsh.github.io/webapk_dompetku/">
-            Preview & Details
+          <a href="https://irwanjsh.github.io/webapk_dompetku/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <i class="fas fa-eye"></i> Preview
           </a>
-
-          <a href="https://github.com/Irwanjsh">
-            GitHub
+          <a href="https://github.com/Irwanjsh" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fab fa-github"></i> GitHub
           </a>
-
         </div>
-
       </div>
-
     </div>
 
-    <!-- CARD -->
-
-    <div class="card web">
-
-      <img src="apkramadhan.jpeg" alt="">
-
+    <!-- CARD 2 — FIXED: was 'web', now 'mobile' -->
+    <div class="card mobile">
+      <div class="card-img-wrap">
+        <img src="apkramadhan.jpeg" alt="Preview aplikasi Ramadhan Tracker">
+        <span class="card-badge mobile-badge">Mobile App</span>
+      </div>
       <div class="card-content">
-
-        <span class="category">
-          Mobile App    
-        </span>
-
-        <h2>Ramadhan tracker</h2>
-
-        <p>
-          Warm nostalgic family website
-          with emotional storytelling.
-        </p>
-
+        <h2>Ramadhan Tracker</h2>
+        <p>Warm nostalgic family website with emotional storytelling.</p>
         <div class="stack">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
         </div>
-
         <div class="buttons">
-
-          <a href="https://irwanjsh.github.io/webapk_ramadhan/">
-            Preview & Details
+          <a href="https://irwanjsh.github.io/webapk_ramadhan/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <i class="fas fa-eye"></i> Preview
           </a>
-
-          <a href="https://github.com/Irwanjsh">
-            GitHub
+          <a href="https://github.com/Irwanjsh" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fab fa-github"></i> GitHub
           </a>
-
         </div>
-
       </div>
-
     </div>
 
-    <!-- CARD -->
-
+    <!-- CARD 3 -->
     <div class="card ui">
-
-      <img src="img/ui-design.png" alt="">
-
+      <div class="card-img-wrap">
+        <img src="img/ui-design.png" alt="Preview Finance UI Kit di Figma">
+        <span class="card-badge ui-badge">UI Design</span>
+      </div>
       <div class="card-content">
-
-        <span class="category">
-          UI Design
-        </span>
-
         <h2>Finance UI Kit</h2>
-
-        <p>
-          Modern dark finance interface
-          exploration for mobile app.
-        </p>
-
+        <p>Modern dark finance interface exploration for mobile app.</p>
         <div class="stack">
           <span>Figma</span>
         </div>
-
         <div class="buttons">
-
-          <a href="#">
-            Preview
+          <a href="#" class="btn-primary">
+            <i class="fas fa-eye"></i> Preview
           </a>
-
         </div>
-
       </div>
-
     </div>
 
-    <!-- CARD -->
-
+    <!-- CARD 4 -->
     <div class="card college">
-
-      <img src="img/college-project.png" alt="">
-
+      <div class="card-img-wrap">
+        <img src="img/college-project.png" alt="Preview AI Search Mindmap project">
+        <span class="card-badge college-badge">College</span>
+      </div>
       <div class="card-content">
-
-        <span class="category">
-          College Project
-        </span>
-
         <h2>AI Search Mindmap</h2>
-
-        <p>
-          Mindmap visualization about
-          informed searching algorithm.
-        </p>
-
+        <p>Mindmap visualization about informed searching algorithm.</p>
         <div class="stack">
           <span>Design</span>
           <span>Research</span>
         </div>
-
         <div class="buttons">
-
-          <a href="#">
-            Preview
+          <a href="#" class="btn-primary">
+            <i class="fas fa-eye"></i> Preview
           </a>
-
         </div>
-
       </div>
-
     </div>
 
   </section>
 
+  <!-- EMPTY STATE -->
+  <div class="empty-state" id="empty-state" style="display:none;">
+    <p>😶 No projects found in this category yet.</p>
+  </div>
+
   <!-- JOURNEY -->
-
   <section class="journey">
-
     <div class="journey-card">
-
-      <h2>Development Journey 🌙</h2>
-
-      <p>
-        Every project here represents
-        a learning process.
-      </p>
-
-      <p>
-        Started from curiosity,
-        continued with consistency.
-      </p>
-
+      <div class="journey-icon">🌙</div>
+      <h2>Development Journey</h2>
+      <p>Every project here represents a learning process.</p>
+      <p>Started from curiosity, continued with consistency.</p>
+      <div class="journey-tags">
+        <span>Learning by Doing</span>
+        <span>AI-Assisted</span>
+        <span>Open Source</span>
+      </div>
     </div>
-
   </section>
 
   <!-- FOOTER -->
-
   <footer>
-
-    <p>
-      Built slowly with curiosity ☕
-    </p>
-
+    <p>Built slowly with curiosity ☕</p>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
